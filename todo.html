@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Todo</title>
+        <meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport"/>
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <div class="todo-container">
+            <header class="logo">
+                <h1>TODO</h1>
+                <input class="todo-input" type="text" placeholder="Input what you will do!" autofocus>
+            </header>
+            <input class="toggle-all" type="checkbox" style="display: none;">
+            <section class="main">
+                <ul class="items-list"></ul>
+            </section>
+
+            <footer class="footer">
+                <span class="items-count">No item left</span>
+                <ul class="select-button">
+                    <li><button class="" style="cursor:pointer;">All</button></li>
+                    <li><button class="" style="cursor:pointer;">Active</button></li>
+                    <li><button class="" style="cursor:pointer;">Completed</button></li>
+                    <li><button id="clear" style="visibility: hidden; cursor:pointer; font-size: 9px;">Clear Completed</button></li>
+                </ul>
+            </footer>
+        </div>
+
+        <script src="data.js"></script>
+        <script src="todo.js"></script>
+    </body>
+</html>
